@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Licores Artesanales</title>
+<style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+ 
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f7f7f7;
+
+            color: #333;
+
+        }
+ 
+
+        header, footer {
+
+            background-color: #2b1d0c;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+        }
+ 
+        header h1 {
+
+            color: #e6b800;
+
+            margin-bottom: 8px;
+
+        }
+ 
+        footer {
+
+            margin-top: 30px;
+
+            padding: 15px;
+
+            font-size: 0.9rem;
+
+        }
+ 
+        /* CONTENEDOR Y GRID */
+
+        .contenedor {
+
+            max-width: 1100px;
+
+            margin: 30px auto;
+
+            padding: 0 15px;
+
+        }
+ 
+        .catalogo {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+            gap: 20px;
+
+        }
+ 
+        /* TARJETA DE PRODUCTO */
+
+        .tarjeta {
+
+            background-color: #fff;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            flex-direction: column;
+
+            transition: 0.3s;
+
+        }
+ 
+        .tarjeta:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+        }
+ 
+        .tarjeta img {
+
+            width: 100%;
+
+            height: 220px;
+
+            object-fit: cover;
+
+        }
+ 
+        .contenido {
+
+            padding: 15px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex-grow: 1;
+
+        }
+ 
+        .contenido h2 {
+
+            font-size: 1.1rem;
+
+            color: #2b1d0c;
+
+            margin-bottom: 8px;
+
+        }
+ 
+        .contenido p {
+
+            font-size: 0.9rem;
+
+            color: #666;
+
+            margin-bottom: 15px;
+
+            flex-grow: 1;
+
+        }
+ 
+        .pie-tarjeta {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+ 
+        .precio {
+
+            font-weight: bold;
+
+            font-size: 1.1rem;
+
+            color: #2b1d0c;
+
+        }
+ 
+        .boton {
+
+            background-color: #8b0000;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 8px 12px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+        }
+ 
+        .boton:hover {
+
+            background-color: #a00000;
+
+        }
+</style>
+</head>
+<body>
+ 
+    <header>
+<h1>Catálogo de Licores Artesanales</h1>
+<p>Selección especial de bebidas y destilados 100% artesanales</p>
+</header>
+ 
+    <main class="contenedor">
+<div class="catalogo">
+ 
+<div class="tarjeta">
+<img src="C:\Users\Alumno\Desktop\images.jpg" alt="Pisco Quebranta"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Pisco Quebranta</h2>
+<p>Destilado artesanal de uvas seleccionadas con toques de plátano y frutos secos.</p>
+<div class="pie-tarjeta">
+<span class="precio">$22.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="licro.jpg" alt="Ginebra Botánica"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Ginebra Botánica</h2>
+<p>Destilada artesanalmente con enebro silvestre, romero y piel de naranja.</p>
+<div class="pie-tarjeta">
+<span class="precio">$28.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="mentas.jpg" alt="Licor de Menta"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Licor de Menta</h2>
+<p>Macerado natural con hojas frescas de menta. Muy refrescante y digestivo.</p>
+<div class="pie-tarjeta">
+<span class="precio">$16.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="wiski.jpg" alt="Whisky Malta"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Whisky Malta</h2>
+<p>Añejado en barricas de roble durante 5 años. Notas a vainilla y madera.</p>
+<div class="pie-tarjeta">
+<span class="precio">$45.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="Mezcal.jpg" alt="Mezcal Reposado">
+<div class="contenido">
+<h2>Mezcal Reposado</h2>
+<p>100% agave horneado en piedra con sabor suavemente ahumado.</p>
+<div class="pie-tarjeta">
+<span class="precio">$34.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+
+<div class="tarjeta">
+<img src="Hidromie.jpg" alt="Hidromiel Clásica"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Hidromiel Clásica</h2>
+<p>Bebida artesanal de miel pura de abejas fermentada de forma natural.</p>
+<div class="pie-tarjeta">
+<span class="precio">$18.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="rons.jpg" alt="Ron Agrícola"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Ron Agrícola</h2>
+<p>Producido directamente del jugo puro de caña de azúcar.</p>
+<div class="pie-tarjeta">
+<span class="precio">$30.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="xd.jpg" alt="Licor de Café"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Licor de Café</h2>
+<p>Macerado artesanal con granos de café tostado orgánico.</p>
+<div class="pie-tarjeta">
+<span class="precio">$20.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+
+<div class="tarjeta">
+<img src="licor.jpg" alt="Licor de Frutos Rojos"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Licor de Frutos Rojos</h2>
+<p>Infusión de frambuesas y moras silvestres en alcohol neutro.</p>
+<div class="pie-tarjeta">
+<span class="precio">$19.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="cacao.jpg" alt="Macerado de Cacao"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Macerado de Cacao</h2>
+<p>Licor artesanal preparado con nibs de cacao puro y canela.</p>
+<div class="pie-tarjeta">
+<span class="precio">$24.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+ 
+<div class="tarjeta">
+<img src="limons.jpg" alt="Limoncello Casero"> <!-- Alto: 220px | Ancho aprox: 500px -->
+<div class="contenido">
+<h2>Limoncello Casero</h2>
+<p>Licor dulce hecho con cáscaras de limones naturales seleccionados.</p>
+<div class="pie-tarjeta">
+<span class="precio">$17.00</span>
+<button class="boton">Comprar</button>
+</div>
+</div>
+</div>
+  
+        </div>
+</main>
+ 
+    <footer>
+<p>&copy; Catálogo de Licores Artesanales</p>
+</footer>
+ 
+</body>
+</html>
+ 
